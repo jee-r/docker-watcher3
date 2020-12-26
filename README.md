@@ -1,5 +1,5 @@
 # docker-watcher3
-[![Drone (cloud)](https://img.shields.io/drone/build/jee-r/docker-watcher3?style=flat-square)](https://cloud.drone.io/jee-r/docker-watcher3)
+[![Drone (self-hosted)](https://img.shields.io/drone/build/docker/watcher3?server=https%3A%2F%2Fdrone.c0de.in&style=flat-square)](https://drone.c0de.in/docker/watcher3)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/j33r/watcher3?style=flat-square)](https://microbadger.com/images/j33r/watcher3)
 [![MicroBadger Layers](https://img.shields.io/microbadger/layers/j33r/watcher3?style=flat-square)](https://microbadger.com/images/j33r/watcher3)
 [![Docker Pulls](https://img.shields.io/docker/pulls/j33r/watcher3?style=flat-square)](https://hub.docker.com/r/j33r/watcher3)
