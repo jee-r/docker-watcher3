@@ -1,4 +1,4 @@
-FROM python:3.10.0-alpine3.14
+FROM python:3.7-alpine3.14
 
 LABEL name="docker-watcher3" \
       maintainer="Jee jee@eer.fr" \
@@ -14,7 +14,6 @@ RUN apk update && \
     apk add --no-cache \
       git \
       tzdata && \
-    pip3 install --no-cache --upgrade urllib3 && \
     mkdir -p /app && \
     chmod -R 777 /app && \
     rm -rf /tmp/* /pkgs ~/.cache 
