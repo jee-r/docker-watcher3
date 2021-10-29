@@ -6,6 +6,8 @@ LABEL name="docker-watcher3" \
       url="https://github.com/barbequesauce/watcher3" \
       org.label-schema.vcs-url="https://github.com/jee-r/docker-watcher3"
 
+COPY rootfs /
+
 RUN sed -i 's/http:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.ircam.fr\/pub/' /etc/apk/repositories && \
     apk update && \
     apk upgrade && \
@@ -17,8 +19,6 @@ RUN sed -i 's/http:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.ircam.fr\/pub/' 
 
 WORKDIR /config
 
-COPY entrypoint.sh /usr/local/bin/
-COPY healthcheck.sh /usr/local/bin/
 
 EXPOSE 9090
 
