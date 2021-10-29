@@ -16,7 +16,8 @@ RUN apk update && \
       tzdata && \
     pip3 install --no-cache --upgrade urllib3 && \
     mkdir -p /app && \
-	chmod -R 777 /app
+    chmod -R 777 /app && \
+    rm -rf /tmp/* /pkgs ~/.cache 
 
 WORKDIR /config
 
