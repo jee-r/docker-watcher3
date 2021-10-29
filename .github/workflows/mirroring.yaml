@@ -28,6 +28,6 @@ jobs:
       - name: mirror to c0de.in 
         uses: jee-r/docker-git-mirror@v1
         with:
-          remote_repo: "git.c0de.in/docker-watcher3.git"
+          remote_repo: "git.c0de.in/watcher3.git"
           remote_repo_username: ${{ secrets.C0DEIN_USER }}
           remote_repo_password: ${{ secrets.C0DEIN_TOKEN }}
