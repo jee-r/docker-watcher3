@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if ! [ ! -f /app/watcher.py ]; then
+if  [ ! -f /app/watcher.py ]; then
   git clone https://github.com/barbequesauce/Watcher3.git /app/
 else
   git -C /app/ pull
