@@ -84,6 +84,7 @@ services:
 Due to the ephemeral nature of Docker containers these images provide a number of optional volume mounts to persist data outside of the container:
 
 - `/config`: Contain watcher's config, db, posters and logs.
+- `/app`: Contain watcher3, usefull if you want roll a specific version (not required)
 - `/torrents` and `/usenet`: should contain watch directories, incomming .. etc for torrents and usenet.
 - `/Media`: Final directory where files are stored after post-process is done.
 - `etc/localtime`: This directory is for have the same time as host inthe container.
