@@ -1,10 +1,9 @@
 #!/bin/sh
 
-if  [ ! -f /app/watcher.py ]; then
-  git clone https://github.com/barbequesauce/Watcher3.git /app/
+if  [ ! -d /app/watcher3 ]; then
+  git clone https://github.com/barbequesauce/Watcher3.git /app/watcher3 
 else
-  git -C /app/ pull
+  git -C /app/watcher3 pull
 fi
 
-
-python3 /app/watcher.py -c /config/watcher.conf -l /config/logs --db /config/database.sqlite --plugins /config/plugins --posters /config/posters
+python3 /app/watcher3/watcher.py -c /config/watcher.conf -l /config/logs --db /config/database.sqlite --plugins /config/plugins --posters /config/posters
